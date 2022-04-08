@@ -13,6 +13,7 @@
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime Deadline { get; set; }
+        public ICollection<Note> Notes { get; set; }
 
         public ProjectTask(Project project, string title, string description, DateTime deadline, Priority priority)
         {
